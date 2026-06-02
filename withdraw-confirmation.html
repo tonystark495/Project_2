@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Withdrawal | PayFlow</title>
+
+    <link rel="stylesheet" href="css/withdraw-confirmation.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="confirmation-card">
+
+        <h1>Confirm Withdrawal</h1>
+
+        <p class="subtitle">
+            Please review your withdrawal details carefully.
+        </p>
+
+        <div class="details">
+
+            <div class="detail-row">
+                <span>Amount</span>
+                <strong>$500.00</strong>
+            </div>
+
+            <div class="detail-row">
+                <span>Withdrawal Fee</span>
+                <strong>$2.00</strong>
+            </div>
+
+            <div class="detail-row">
+                <span>Method</span>
+                <strong>MTN Mobile Money</strong>
+            </div>
+
+            <div class="detail-row">
+                <span>Destination</span>
+                <strong>+237 6XX XX XX XX</strong>
+            </div>
+
+            <div class="detail-row total">
+                <span>Total Deducted</span>
+                <strong>$502.00</strong>
+            </div>
+
+        </div>
+
+        <div class="buttons">
+
+            <button
+            class="cancel-btn"
+            onclick="history.back()">
+                Cancel
+            </button>
+
+            <button
+            class="confirm-btn"
+            id="confirmWithdrawal">
+                Confirm Withdrawal
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/withdraw-confirmation.js"></script>
+
+</body>
+</html>

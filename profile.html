@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile & Settings | ABC'S</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header>
+
+    <div class="logo">ABC'S</div>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="history.html">History</a>
+        <a href="send-money.html">Send Money</a>
+        <a href="receive-money.html">Receive Money</a>
+        <a href="profile.html">Profile</a>
+        <a href="settings.html">Settings</a>
+    </nav>
+
+</header>
+
+<main>
+
+    <div class="profile-container">
+
+        <!-- Profile Card -->
+
+        <div class="profile-card">
+
+            <div class="avatar">
+                <img src="images/user.png" alt="Profile">
+            </div>
+
+            <h2>Emmanuel Boyomo</h2>
+
+            <p>emmanuel@example.com</p>
+
+            <button class="upload-btn">
+                Change Picture
+            </button>
+
+        </div>
+
+        <!--KYC Status-->
+
+        <div class="verification-box">
+            <h3>KYC Verification</h3>
+            <span class="pending-status">
+                Pending Verification
+            </span>
+        </div>
+
+        <!-- Settings -->
+
+        <div class="settings-card">
+
+            <h2>Account Settings</h2>
+
+            <form id="profileForm">
+
+                <div class="row">
+
+                    <div class="input-group">
+                        <label>First Name</label>
+                        <input
+                        type="text"
+                        value="Emmanuel">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Last Name</label>
+                        <input
+                        type="text"
+                        value="Boyomo">
+                    </div>
+
+                </div>
+
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input
+                    type="email"
+                    value="emmanuel@example.com">
+                </div>
+
+                <div class="input-group">
+                    <label>Phone Number</label>
+                    <input
+                    type="tel"
+                    value="+237 6XX XX XX XX">
+                </div>
+
+                <button type="submit">
+                    Save Changes
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- Security Section -->
+
+    <div class="security-card">
+
+        <h2>Security Settings</h2>
+
+        <div class="security-item">
+
+            <div>
+                <h4>Change Password</h4>
+                <p>Update your account password.</p>
+            </div>
+
+            <button>
+                Update
+            </button>
+
+        </div>
+
+        <div class="security-item">
+
+            <div>
+                <h4>Two-Factor Authentication</h4>
+                <p>Increase account security.</p>
+            </div>
+
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+
+        </div>
+
+    </div>
+
+</main>
+
+<script src="js/profile.js"></script>
+<button class="logout-btn" onclick="logout()">Logout</button>
+</body>
+</html>

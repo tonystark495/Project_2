@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Card | ABC'S</title>
+
+    <link rel="stylesheet" href="css/add-card.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header>
+
+    <div class="logo">ABC'S</div>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="wallet.html">Wallet</a>
+        <a href="history.html">History</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+
+</header>
+
+<main>
+
+    <div class="card-form-container">
+
+        <h1>Add New Card</h1>
+
+        <p class="subtitle">
+            Securely link a debit or credit card.
+        </p>
+
+        <form id="addCardForm">
+
+            <div class="input-group">
+
+                <label>Cardholder Name</label>
+
+                <input
+                type="text"
+                id="cardholder"
+                placeholder="John Doe"
+                required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Card Number</label>
+
+                <input
+                type="text"
+                id="cardNumber"
+                placeholder="1234 5678 9012 3456"
+                maxlength="19"
+                required>
+
+            </div>
+
+            <div class="row">
+
+                <div class="input-group">
+
+                    <label>Expiry Date</label>
+
+                    <input
+                    type="text"
+                    id="expiry"
+                    placeholder="MM/YY"
+                    maxlength="5"
+                    required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>CVV</label>
+
+                    <input
+                    type="password"
+                    id="cvv"
+                    placeholder="123"
+                    maxlength="4"
+                    required>
+
+                </div>
+
+            </div>
+
+            <button type="submit">
+                Link Card
+            </button>
+
+        </form>
+
+    </div>
+
+</main>
+
+<script src="js/add-card.js"></script>
+
+</body>
+</html>

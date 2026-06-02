@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYC Verification | ABC'S</title>
+
+    <link rel="stylesheet" href="css/kyc-verification.css">
+</head>
+<body>
+
+<header>
+
+    <div class="logo">ABC'S</div>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="wallet.html">Wallet</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+
+</header>
+
+<main>
+
+    <div class="kyc-container">
+
+        <h1>Identity Verification</h1>
+
+        <p>
+            Verify your identity to unlock all PayFlow features.
+        </p>
+
+        <div class="status pending">
+            Verification Status: Pending
+        </div>
+
+        <form id="kycForm">
+
+            <label>Full Name</label>
+            <input type="text" required>
+
+            <label>Date of Birth</label>
+            <input type="date" required>
+
+            <label>Country</label>
+            <input type="text" required>
+
+            <label>ID Type</label>
+
+            <select required>
+                <option>ID Card</option>
+                <option>Passport</option>
+                <option>Driver's License</option>
+            </select>
+
+            <label>Upload Document</label>
+
+            <input
+            type="file"
+            accept=".jpg,.jpeg,.png,.pdf"
+            required>
+
+            <button type="submit">
+                Submit Verification
+            </button>
+
+        </form>
+
+    </div>
+
+</main>
+
+<script src="js/kyc-verification.js"></script>
+
+</body>
+</html>

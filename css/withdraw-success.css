@@ -1,0 +1,65 @@
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#f5f7fa;
+    font-family:"Segoe UI",sans-serif;
+}
+
+.success-card{
+
+    background:white;
+
+    padding:50px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.checkmark{
+
+    width:90px;
+    height:90px;
+
+    background:#28a745;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    font-size:45px;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+}
+
+a{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:#0070E0;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 25px;
+
+    border-radius:25px;
+
+}
