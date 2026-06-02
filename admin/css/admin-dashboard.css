@@ -36,6 +36,16 @@ body{
     list-style:none;
 }
 
+.sidebar ul li{
+    padding:18px 25px;
+    cursor:pointer;
+}
+
+.sidebar ul li a{
+    color:white;
+    text-decoration:none;
+}
+
 .sidebar li{
     padding:18px 25px;
     cursor:pointer;
