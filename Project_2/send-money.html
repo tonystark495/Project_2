@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Money | ABC'S</title>
+    <link rel="stylesheet" href="css/send-money.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header>
+
+    <div class="logo">
+        ABC'S
+    </div>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="history.html">History</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+
+</header>
+
+<main>
+
+    <div class="send-card">
+
+        <h1>Send Money</h1>
+
+        <p class="subtitle">
+            Transfer money quickly and securely.
+        </p>
+
+        <form id="sendForm">
+
+            <div class="input-group">
+                <label>Recipient Email</label>
+                <input
+                type="email"
+                id="recipient"
+                placeholder="example@email.com"
+                required>
+            </div>
+
+            <div class="input-group">
+                <label>Amount ($)</label>
+                <input
+                type="number"
+                id="amount"
+                min="1"
+                placeholder="Enter amount"
+                required>
+            </div>
+
+            <div class="input-group">
+                <label>Description</label>
+                <textarea
+                id="description"
+                placeholder="Optional note"></textarea>
+            </div>
+
+            <button type="submit">
+                Continue
+            </button>
+
+        </form>
+
+    </div>
+
+</main>
+
+<script src="js/send-money.js"></script>
+
+</body>
+</html>

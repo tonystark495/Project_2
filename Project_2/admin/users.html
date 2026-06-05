@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users Management | ABC'S Admin</title>
+
+    <link rel="stylesheet" href="css/users.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+        ABC'S Admin
+    </div>
+
+    <ul>
+
+        <li>
+            <i class="fas fa-chart-line"></i>
+            <a href="admin-dashboard.html">Dashboard</a>
+        </li>
+
+        <li class="active">
+            <i class="fas fa-users"></i>
+            Users
+        </li>
+
+        <li>
+            <i class="fas fa-money-bill-wave"></i>
+            <a href="transactions.html">Transactions</a>
+        </li>
+
+        <li>
+            <i class="fas fa-id-card"></i>
+            <a href="kyc.html">KYC Requests</a>
+        </li>
+
+        <li>
+            <i class="fas fa-chart-pie"></i>
+            <a href="reports.html">Reports</a>
+        </li>
+
+        <li>
+            <i class="fas fa-cog"></i>
+            <a href="admin-settings.html">Settings</a>
+        </li>
+
+    </ul>
+
+</div>
+
+<div class="main-content">
+
+    <header>
+
+        <h1>User Management</h1>
+
+        <div class="admin-profile">
+            Admin User
+        </div>
+
+    </header>
+
+    <div class="search-section">
+
+        <input
+        type="text"
+        placeholder="Search users...">
+
+    </div>
+
+    <section class="users-card">
+
+        <h2>Registered Users</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>User ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Balance</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>USR001</td>
+                    <td>John Smith</td>
+                    <td>john@email.com</td>
+                    <td>$5,000</td>
+
+                    <td class="active-status">
+                        Active
+                    </td>
+
+                    <td>
+
+                        <a href="user-details.html"
+                        class="view-btn">
+                            View
+                        </a>
+
+                        <button class="suspend-btn">
+                            Suspend
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>USR002</td>
+                    <td>Mary Johnson</td>
+                    <td>mary@email.com</td>
+                    <td>$2,300</td>
+
+                    <td class="inactive-status">
+                        Suspended
+                    </td>
+
+                    <td>
+
+                        <a href="user-details.html"
+                        class="view-btn">
+                            View
+                        </a>
+
+                        <button class="activate-btn">
+                            Activate
+                        </button>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>USR003</td>
+                    <td>David Brown</td>
+                    <td>david@email.com</td>
+                    <td>$7,500</td>
+
+                    <td class="active-status">
+                        Active
+                    </td>
+
+                    <td>
+
+                        <a href="user-details.html"
+                        class="view-btn">
+                            View
+                        </a>
+
+                        <button class="suspend-btn">
+                            Suspend
+                        </button>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+</div>
+
+</body>
+</html>

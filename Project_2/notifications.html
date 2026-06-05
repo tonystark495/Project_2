@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications | ABC'S</title>
+
+    <link rel="stylesheet" href="css/notifications.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header>
+
+    <div class="logo">ABC'S</div>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="wallet.html">Wallet</a>
+        <a href="history.html">History</a>
+        <a href="profile.html">Profile</a>
+        <a href="settings.html">Settings</a>
+    </nav>
+
+</header>
+
+<main>
+
+    <div class="notifications-container">
+
+        <div class="header-row">
+
+            <h1>Notifications</h1>
+
+            <button id="markAllRead">
+                Mark All as Read
+            </button>
+
+        </div>
+
+        <div class="notification unread">
+
+            <i class="fas fa-money-bill-wave"></i>
+
+            <div>
+                <h3>Funds Added</h3>
+                <p>$500 has been added to your wallet.</p>
+                <small>2 minutes ago</small>
+            </div>
+
+        </div>
+
+        <div class="notification unread">
+
+            <i class="fas fa-paper-plane"></i>
+
+            <div>
+                <h3>Transfer Successful</h3>
+                <p>Your payment to John Doe was completed.</p>
+                <small>30 minutes ago</small>
+            </div>
+
+        </div>
+
+        <div class="notification">
+
+            <i class="fas fa-shield-alt"></i>
+
+            <div>
+                <h3>Security Alert</h3>
+                <p>New login detected on your account.</p>
+                <small>Yesterday</small>
+            </div>
+
+        </div>
+
+        <div class="notification">
+
+            <i class="fas fa-id-card"></i>
+
+            <div>
+                <h3>KYC Update</h3>
+                <p>Your identity verification is under review.</p>
+                <small>2 days ago</small>
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<script src="js/notifications.js"></script>
+
+</body>
+</html>

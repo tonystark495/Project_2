@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KYC Requests | ABC'S Admin</title>
+
+<link rel="stylesheet" href="css/kyc.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+        ABC'S Admin
+    </div>
+
+    <ul>
+
+        <li>
+            <i class="fas fa-chart-line"></i>
+            <a href="admin-dashboard.html">Dashboard</a>
+        </li>
+
+        <li>
+            <i class="fas fa-users"></i>
+            <a href="users.html">Users</a>
+        </li>
+
+        <li>
+            <i class="fas fa-money-bill-wave"></i>
+            <a href="transactions.html">Transactions</a>
+        </li>
+
+        <li class="active">
+            <i class="fas fa-id-card"></i>
+            KYC Requests
+        </li>
+
+    </ul>
+
+</div>
+
+<div class="main-content">
+
+    <header>
+
+        <h1>KYC Verification Requests</h1>
+
+    </header>
+
+    <section class="card">
+
+        <h2>Pending Requests</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>User ID</th>
+                    <th>Name</th>
+                    <th>Document Type</th>
+                    <th>Date Submitted</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>USR001</td>
+                    <td>John Smith</td>
+                    <td>Passport</td>
+                    <td>02/06/2026</td>
+                    <td class="pending">Pending</td>
+
+                    <td>
+                        <a href="kyc-details.html"
+                        class="view-btn">
+                            Review
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>USR002</td>
+                    <td>Mary Johnson</td>
+                    <td>National ID</td>
+                    <td>01/06/2026</td>
+                    <td class="pending">Pending</td>
+
+                    <td>
+                        <a href="kyc-details.html"
+                        class="view-btn">
+                            Review
+                        </a>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked Bank Accounts | ABC'S</title>
+
+    <link rel="stylesheet" href="css/linked-banks.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header>
+
+    <div class="logo">ABC'S</div>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="wallet.html">Wallet</a>
+        <a href="history.html">History</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="banks-container">
+
+        <div class="top-bar">
+
+            <h1>Linked Bank Accounts</h1>
+
+            <button
+            onclick="location.href='add-bank.html'">
+                + Add Bank Account
+            </button>
+
+        </div>
+
+        <!-- Bank 1 -->
+
+        <div class="bank-box">
+
+            <div class="bank-info">
+
+                <i class="fas fa-university"></i>
+
+                <div>
+
+                    <h3>Afriland First Bank</h3>
+
+                    <p>Account Ending: ****4587</p>
+
+                </div>
+
+            </div>
+
+            <div class="bank-actions">
+
+                <button class="default-btn">
+                    Default
+                </button>
+
+                <button
+                class="remove-btn"
+                onclick="removeBank(this)">
+                    Remove
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Bank 2 -->
+
+        <div class="bank-box">
+
+            <div class="bank-info">
+
+                <i class="fas fa-university"></i>
+
+                <div>
+
+                    <h3>UBA Cameroon</h3>
+
+                    <p>Account Ending: ****9854</p>
+
+                </div>
+
+            </div>
+
+            <div class="bank-actions">
+
+                <button
+                class="set-default-btn">
+                    Set Default
+                </button>
+
+                <button
+                class="remove-btn"
+                onclick="removeBank(this)">
+                    Remove
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="js/linked-banks.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+:root{
+    --primary:#003087;
+    --bg:#f5f7fa;
+    --card:#ffffff;
+    --text:#111;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    transition:0.3s;
+}
+
+header{
+    background:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:var(--primary);
+}
+
+nav a{
+    margin-left:15px;
+    text-decoration:none;
+    color:#333;
+}
+
+.settings-container{
+    width:600px;
+    margin:50px auto;
+    background:var(--card);
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+    color:var(--primary);
+}
+
+.section{
+    margin-bottom:25px;
+}
+
+.section h2{
+    margin-bottom:10px;
+    color:#444;
+}
+
+.row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 0;
+}
+
+button{
+    width:100%;
+    margin-top:10px;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+    background:#0070E0;
+    color:white;
+}
+
+button:hover{
+    background:#003087;
+}
+
+.danger{
+    background:#dc3545;
+}
+
+/* SWITCH */
+.switch{
+    position:relative;
+    display:inline-block;
+    width:50px;
+    height:25px;
+}
+
+.switch input{
+    display:none;
+}
+
+.slider{
+    position:absolute;
+    cursor:pointer;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:#ccc;
+    border-radius:25px;
+    transition:0.4s;
+}
+
+.slider:before{
+    position:absolute;
+    content:"";
+    height:18px;
+    width:18px;
+    left:4px;
+    bottom:3px;
+    background:white;
+    border-radius:50%;
+    transition:0.4s;
+}
+
+input:checked + .slider{
+    background:#0070E0;
+}
+
+input:checked + .slider:before{
+    transform:translateX(24px);
+}
+
+/* DARK MODE */
+.dark-mode{
+    --bg:#121212;
+    --card:#1e1e1e;
+    --text:#ffffff;
+}
+
+.dark-mode body{
+    background:#121212;
+}
